@@ -1,6 +1,6 @@
 const express = require('express')
+const methodOverride = require('method-override')
 const checklistRouter = require('./src/routes/checklists')
-
 const rootRouter = require('./src/routes/index')
 const path = require('path')
 
@@ -8,6 +8,7 @@ require('./config/database')
 
 const app = express()
 app.use(express.urlencoded({extended: true}))
+app.use(methodOverride('_method'))
 
 app.set('views', path.join(__dirname, 'src/view'))
 app.set('view engine', 'ejs')
