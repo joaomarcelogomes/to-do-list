@@ -7,6 +7,7 @@ const path = require('path')
 require('./config/database')
 
 const app = express()
+app.use(express.urlencoded({extended: true}))
 
 app.set('views', path.join(__dirname, 'src/view'))
 app.set('view engine', 'ejs')
