@@ -5,8 +5,8 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Sobre](#Sobre)
-   * [Instalação](#instalacao)
-   * [Tecnologias](#tecnologias)
+   * [Instalação](#Instalação)
+   * [Tecnologias](#Tecnologias)
 <!--te-->
 
 ### Features
